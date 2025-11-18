@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+  --primary-color: #353535;
+  --secondary-color: #fc0;
+  --third-color: #fff;
+  --bg-gradient: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: auto;
+}
+
+.btn_primary {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--third-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    border-radius: 20px;
+    background: var(--secondary-color);
+    padding: 16px 44px 17px 45px;
+}
+
+.btn_primary:hover {
+    text-decoration: none;
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    transition: .3s;
+}
+
+.btn_secondary {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--primary-color);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 16px 18px 17px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    background-color: transparent;
+}
+
+.btn_secondary:hover {
+    background: var(--primary-color);
+    color: var(--third-color);
+    transition: .3s;
+}
+
+@media (max-width:991px) {
+    .btn_primary {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        padding: 12px 32px 13px 33px;
+        margin-bottom: 16px;
+    }
+
+    .btn_secondary {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        padding: 12px 22px 13px 23px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/*                                Header Starts                               */
+
+#navbarSupportedContent ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: var(--primary-color);
+    padding: 23px 23px 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+}
+
+#navbarSupportedContent ul li a:hover {
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary-color);
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                Main Section                                */
+#banner {
+    padding: 56px 0 155px;
+}
+
+#banner h5 {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#banner h1 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: #353535;
+    margin-bottom: 25px;
+}
+
+#banner p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+    margin-bottom: 45px;
+}
+
+#banner a {
+    text-decoration: none; 
+}
+
+#banner a.btn_primary {
+    margin-right: 40px;
+}
+
+#banner .cnt {
+    display: flex;
+    align-items: center;
+}
+
+#banner .cnt p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 66px 32px 0 0;
+}
+
+#banner .cnt a {
+    margin: 0 16px;
+    padding: 10px;
+    color: var(--primary-color);
+    border-radius: 100%;
+    background-color: #f4f3f3;
+    margin: 66px 32px 0 0;
+    align-items: center;
+    display: inline-flex;
+}
+
+#banner .cnt a:hover {
+    background: var(--primary-color);
+    color: var(--third-color);
+    transition: .3s;
+}
+
+#banner .scroll svg {
+    position: absolute;
+    margin: 0 540px;
+}
+
+@media (max-width: 991px) {
+    #banner h5 {
+        font-size: 20px;
+    }
+
+    #banner h1 {
+        font-size: 48px;
+    }
+    
+    #banner p {
+        font-size: 12px;
+    }
+
+    #banner .cnt p {
+        font-size: 16px;
+    }
+
+    img, svg {
+        margin-top: 40px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                About Section                               */
+#about {
+    background: var(--bg-gradient);
+    max-width: 1441px;
+    margin: auto;
+}
+
+#about img {
+    width: 549px;
+    height: 530px;
+}
+#about h5 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--primary-color);
+    margin: 78px 0 26px 33.82px;
+}
+
+#about p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    margin: 0 0 45px 33.82px;
+}
+
+#about a {
+    margin-left: 33.82px;
+}
+
+#about .vector {
+    border-radius: 100%;
+    fill: linear-gradient(180deg, #52ab70 0%, rgba(82, 171, 112, 0.48) 100%);
+    stroke-width: 1px;
+    stroke: #000;
+    position: relative;
+    bottom: 0;
+    left: 853px;
+}
+
+@media (max-width: 991px) {
+    #about {
+        height: 743px;
+    }
+    #about img {
+        width: 313px;
+        height: 302px;
+    }
+    #about h5 {
+        font-size: 36px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    #about a {
+        margin: auto;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               Skills Section                               */
+
+#skills {
+    padding: 151px 0 165px;
+}
+
+#skills .card {
+    border: 1px solid var(--third-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: var(--third-color);
+    width: 350px;
+    height: 367px;
+}
+
+#skills .card img {
+    width: 78px;
+    height: 79px;
+    margin: 32px auto 0;
+}
+
+#skills .card h5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 18px 0 14px 0;
+}
+
+#skills .card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    text-align: center;
+    color: #7a7a7a;
+    margin: 0 48px 64px 46px;
+}
+
+@media (max-width: 991px){
+    #skills .card {
+        border-radius: 12px;
+        width: 343px;
+        height: 156px;
+    }
+
+    #skills .card img {
+        width: 48px;
+        height: 49px;
+        margin: 22px auto 0;
+    }
+
+    #skills .card h4 {
+        font-size: 16px;
+        
+    }
+
+    #skills .card p {
+        font-size: 12px;
+        margin: 0 28px 34px 26px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                              Branding Section                              */
+#branding {
+    margin: 0 auto 147px;
+    border-radius: 30px;
+    width: 1110px;
+    height: 473px;
+    background: var(--bg-gradient);
+}
+
+#branding img {
+    width: 516px;
+    height: 461px;
+}
+
+#branding .data h2 {
+    margin: 83px 0 21px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 44px;
+    color: var(--primary-color);
+}
+
+#branding .data p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 190%;
+    color: var(--primary-color);
+    margin-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+    #branding {
+        border-radius: 20px;
+        width: 343px;
+        height: 679px;
+    }
+
+    #branding img {
+        width: 308px;
+        height: 275px;
+    }
+
+    #branding .data h2 {
+        font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-color);
+    }
+
+    #branding .data p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        color: var(--primary-color);
+    }
+}
+/* -------------------------------------------------------------------------- */
