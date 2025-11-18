@@ -308,26 +308,36 @@ body {
 }
 
 @media (max-width: 991px){
+    #skills {
+        display: flex;
+        justify-content: center;
+    }
+    #skills .row {
+        display: flex;
+        justify-content: center;
+    }
     #skills .card {
         border-radius: 12px;
+        margin: 11px 0;
         width: 343px;
-        height: 156px;
+        height: 256px;
     }
 
     #skills .card img {
-        width: 48px;
-        height: 49px;
+        width: 43px;
+        height: 45px;
         margin: 22px auto 0;
     }
 
     #skills .card h4 {
         font-size: 16px;
+        margin: 26px 0 3px 16px;
         
     }
 
     #skills .card p {
         font-size: 12px;
-        margin: 0 28px 34px 26px;
+        margin: 0 30px 39px;
     }
 }
 /* -------------------------------------------------------------------------- */
@@ -377,9 +387,9 @@ body {
 
     #branding .data h2 {
         font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--primary-color);
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--primary-color);
     }
 
     #branding .data p {
