@@ -183,8 +183,14 @@ body {
 @media (max-width: 991px) {
     #banner h5 {
         font-size: 20px;
+        margin-top: -5px;
     }
-
+  
+    #banner h5 img {
+      width: 16px;
+      height: 16px;
+    }
+  
     #banner h1 {
         font-size: 48px;
     }
@@ -400,3 +406,4 @@ body {
     }
 }
 /* -------------------------------------------------------------------------- */
+
